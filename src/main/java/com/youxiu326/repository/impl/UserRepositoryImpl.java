@@ -48,7 +48,7 @@ public class UserRepositoryImpl implements UserRepository {
         //更新查询返回结果集的第一条
         UpdateResult result =mongoTemplate.updateFirst(query,update,User.class);
         //更新查询返回结果集的所有
-        // mongoTemplate.updateMulti(query,update,UserEntity.class);
+        // mongoTemplate.updateMulti(query,update,User.class);
         if(result!=null)
             return result.getMatchedCount();
         else
