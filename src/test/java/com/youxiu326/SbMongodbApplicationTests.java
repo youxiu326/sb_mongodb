@@ -18,9 +18,10 @@ public class SbMongodbApplicationTests {
     @Test
     public void testSaveUser() throws Exception {
         User user=new User();
-        user.setId(3l);
-        user.setUserName("小日");
-        user.setPassWord("faaaaoo123");
+        user.setId(9l);
+        user.setUserName("黑怕");
+        user.setPassWord("迪士尼");
+        user.setAge(13);
         userRepository.saveUser(user);
     }
 
